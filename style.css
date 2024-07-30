@@ -1,0 +1,107 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+height: 100vh;
+background: url('https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_640.jpg') ;
+
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+opacity: 1;
+z-index: -1;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container {
+     background: rgba(225, 133, 133, 0.3); 
+    padding: 500px;
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* z-index: 1; */
+    /* position: relative; */
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form h2{
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 410;
+        font-style: normal;
+        font-size: 36px;
+      
+}
+.form input {
+    margin-bottom: 15px;
+    padding: 17px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 396;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.form button {
+    margin-bottom: 25px; 
+    padding: 10px 20px;
+    background-color: brown; /* Set a background color */
+    color: white; /* Set the text color */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Round the corners */
+    font-size: 18px; /* Set the font size */
+    cursor: pointer; /* Change the cursor to a pointer when hovering */
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 396;
+    font-style: normal;
+    font-size: 20px;
+}
+.form button:hover {
+    background-color: #ff4f41; /* Change the background color on hover */
+    color: black; /* Change the text color on hover */
+}
+
+.form input::placeholder {
+    color: #aaa; /* Set the placeholder text color */
+    font-family: "Fira Sans", sans-serif; /* Set the font family */
+    font-size: 16px; /* Set the font size */
+    font-style:italic;
+    opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .form h2 {
+        font-size: 20px;
+    }
+
+    .form input,
+    .form button {
+        font-size: 12px;
+    }
+}
